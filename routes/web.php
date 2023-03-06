@@ -47,3 +47,5 @@ Route::post('/comments', 'CommentController@store')->name('comments.store');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
