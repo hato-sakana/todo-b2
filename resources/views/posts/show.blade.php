@@ -11,19 +11,22 @@
                 <div class="card-body">
                 <p class="card-text">内容：{{ $post->body }}</p>
                 <p>投稿日時：{{ $post->created_at }}</p>
-                <a href="{{ route('posts.edit',$post->id) }}" class="btn btn-primary">編集する</a>
+                <div class="twoBtn">
+                <a href="{{ route('posts.edit',$post->id) }}" class="btn btn-primary">edit</a>
                 <form action='{{ route('posts.destroy',$post->id) }}' method='post'>
                     @csrf
                     @method('delete')
-                    <input type='submit' value='削除' class="btn btn-danger" onclick='return confirm("本当に削除しますか？");'>
+                    <input type='submit' value='delete' class="btn btn-danger" onclick='return confirm("本当に削除しますか？");'>
                 </form>
-                </div>
+                </div> 
+                {{-- ボタンを横並びに --}}
+              </div>
             </div>
         </div>
     </div>
     <div class="row justify-content-center">
       <div class="col-md-8">
-              <button type="button" class="btn btn-primary" onclick="location.href='{{ route('comments.create',$post->id) }}'">コメントする</button>
+              <button type="button" class="btn btn-primary" onclick="location.href='{{ route('comments.create',$post->id) }}'">comment</button>
       </div>
     </div>
     <div class="row justify-content-center">

@@ -53,4 +53,7 @@ footer{
   border-color: rgb(106,64,33);
 }
 
-
+.twoBtn{
+  display: flex;
+  justify-content: center;
+}
