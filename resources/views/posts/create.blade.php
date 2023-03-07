@@ -15,6 +15,11 @@
                   <textarea class="form-control" placeholder="内容" rows="5" name="body">
                   </textarea>
               </div>
+              <form method="POST" action="/upload" enctype="multipart/form-data">
+                @csrf
+                <input type="file" name="image">
+                <button>アップロード</button>
+              </form>
               <button type="submit" class="btn btn-primary">作成</button>
           </form>
       </div>
