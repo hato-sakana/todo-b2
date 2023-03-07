@@ -60,5 +60,16 @@ class PostController extends Controller
         return redirect()->route('posts.index');
     }
 
+    public function upload(Request $request)
+    {
+        // ディレクトリ名
+        $dir = 'sample';
+
+        // sampleディレクトリに画像を保存
+        $request->file('image')->store('public/' . $dir);
+
+        return redirect('/');
+    }
+
 
 }
