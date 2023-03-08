@@ -15,11 +15,10 @@
                   <textarea class="form-control" placeholder="内容" rows="5" name="body">
                   </textarea>
               </div>
-              <form method="POST" action="/upload" enctype="multipart/form-data">
-                @csrf
-                <input type="file" name="image">
-                <button>アップロード</button>
-              </form>
+              <form action="{{ route('add_image') }}" enctype='multipart/form-data' method="post"> 
+                @csrf 
+                    <input type="file" name="image_at">  
+                    <input type="submit" value="写真を登録する"> 
               <button type="submit" class="btn btn-primary">作成</button>
           </form>
       </div>

@@ -48,4 +48,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
+Route::post('/posts/create', 'AddImageController@addImage')->name('add_image');

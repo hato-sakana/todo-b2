@@ -26,7 +26,7 @@ class PostController extends Controller
         $post->title=$request->title;
         $post->body=$request->body;
         $post->user_id=Auth::id();
-
+        $post->image_at=$request->image_at;
         $post -> save();
         return redirect()->route('posts.index');
     }
@@ -60,16 +60,16 @@ class PostController extends Controller
         return redirect()->route('posts.index');
     }
 
-    public function upload(Request $request)
-    {
-        // ディレクトリ名
-        $dir = 'sample';
+    // public function upload(Request $request)
+    // {
+    //     ディレクトリ名
+    //     $dir = 'sample';
 
-        // sampleディレクトリに画像を保存
-        $request->file('image')->store('public/' . $dir);
+    //     sampleディレクトリに画像を保存
+    //     $request->file('image')->store('public/' . $dir);
 
-        return redirect('/');
-    }
+    //     return redirect('/');
+    // }
 
 
 }

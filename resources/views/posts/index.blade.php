@@ -8,6 +8,7 @@
                         投稿一覧
                     </div>
                     @foreach ($posts as $post)
+                    <img src={{ $post->imege_at }} alt="">
                         <div class="card-body">
                             <h5 class="card-title">タイトル : {{ $post->title }}</h5>
                             <p class="card-text">
@@ -19,6 +20,8 @@
                         <div class="card-footer text-muted">
                             投稿日時 : {{ $post->created_at }}
                         </div>
+
+                        {{ $post->image_at }}
                     @endforeach
                 </div>
             </div>
