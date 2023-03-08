@@ -51,9 +51,16 @@ footer{
 .btn-danger{
   background-color: rgb(106,64,33);
   border-color: rgb(106,64,33);
+  margin: 1%;
 }
 
 .twoBtn{
   display: flex;
   justify-content: center;
+  margin: 1%;
+}
+
+.show-title{
+  text-align: center;
+  padding-top: 2%;
 }
