@@ -64,3 +64,25 @@ footer{
   text-align: center;
   padding-top: 2%;
 }
+
+/* .row5{
+  border: #333 solid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+} */
+
+.cards-container{
+  border: #c0c0c0 solid;
+  margin: 10px 10px 5px 10px;
+  width: 30%;
+  height: 20%;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  align-content: space-around;
+}
