@@ -19,7 +19,7 @@
                 @csrf
                 <input type="file" name="image">
                 <button>アップロード</button>
-              </form>
+              {{-- </form> --}}
               <button type="submit" class="btn btn-primary">作成</button>
           </form>
       </div>
