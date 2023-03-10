@@ -12,15 +12,15 @@
                    </div>
                 </div>
                 <div class="card-body">
+                <p class="card-date">投稿日時：{{ $post->created_at }}</p>
                 <p class="card-text">内容：{{ $post->body }}</p>
-                <p>投稿日時：{{ $post->created_at }}</p>
                 <div class="twoBtn">
                 @if($post->user_id == Auth::user()->id)
                 <a href="{{ route('posts.edit',$post->id) }}" class="btn btn-primary">edit</a>
                 <form action='{{ route('posts.destroy',$post->id) }}' method='post'>
                     @csrf
                     @method('delete')
-                    <input type='submit' value='delete' class="btn btn-danger" onclick='return confirm("本当に削除しますか？");'>
+                    <input type='submit' value='delete' class="btn btn-danger" onclick='return confirm("大切な思い出を本当に削除しますか？");'>
                 </form>
                 @endif
                 </div> 

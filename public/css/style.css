@@ -44,14 +44,17 @@ footer{
 }
 
 .btn-primary{
-  background-color:rgb(62,45,34);
+  color: #434040;
+  background-color:rgb(246, 244, 240);
   border-color:rgb(62,45,34);
+  margin: 5px;
 }
 
 .btn-danger{
-  background-color: rgb(106,64,33);
-  border-color: rgb(106,64,33);
-  margin: 1%;
+  color: #434040;
+  background-color:rgb(246, 244, 240);
+  border-color:rgb(62,45,34);
+  margin: 5px;
 }
 
 .twoBtn{
@@ -85,4 +88,12 @@ footer{
   flex-wrap: wrap;
   /* justify-content: space-between; */
   align-content: space-around;
+}
+
+.card-title{
+  font-size: 12px;
+}
+
+.card-date{
+  font-size: 12px;
 }
