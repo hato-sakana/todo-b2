@@ -13,6 +13,7 @@
                   <p class="card-text">投稿者:{{ $post->user->name }}</p>
                   <a href="{{ route('posts.show', $post->id) }}" class="btn btn-primary">details</a>
                 </div>
+                <div class="heart"></div>
                 <div class="card-footer text-muted">
                     投稿日時 : {{ $post->created_at }}
                 </div>
